@@ -2,3 +2,14 @@
 .main {
     background-color: #dfffff;
 }
+
+body {
+    margin: 0 auto;
+    max-width: 60%;
+    
+}
+
+#button {
+    width: 2%;
+    height: 20px;
+}
