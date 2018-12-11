@@ -18,30 +18,45 @@
 
 <body>
 
+
+    <button id="button" onclick="showNavBar()"> <img id="menu-bars" src="img/menu-bars.png" alt=""> </button>
+    <div class="nav-drop" style="top: -500px;">
+
+        <div id="nav-a">
+            <a class="a" href="index.html">Home</a>
+            <a class="a" href="target-market.html">Target Market</a>
+            <a class="a" href="description.html">Description</a>
+            <a class="a" href="impact.html">Impact</a>
+        </div>
+    </div>
+    <main>
+        <h1 class="home-h1">Handicap Apparatus for Normal Disarticulation (H.A.N.D.)</h1>
+        <section>
+            <p class="home-p">The H.A.N.D. is an artificial hand prosthesis that relies on use of preexisting tendons and muscles to control the fingers of the prosthesis. It addresses one of the most problematic issues of artificial prostheses: Unintuitive
+                movement
+                control. It will most benefit amputees with a fully intact forearm up to the wrist, from which the flexor digitorum profundus and flexor pollicis longus tendons can still be used.</p>
+            <a href="http://www.assh.org/handcare/Anatomy/Muscles#Wrist%20Forearm" title="Most tendons split long before the wrist" target="_blank"><img src="img/Tendons-FingerExtensor-ExtDigitorum-resize.jpg" alt="Diagram of tendons in the arm"></a>
+        </section>
+        <section>
+            <p class="home-p">The specific amputation required to qualify patients for use of this prosthesis is called wrist disarticulation. It involves the amputation of the hand at the wrist joint, ensuring that the muscles and tendons located within the arm
+                are
+                not damaged.</p>
+            <a href="https://www.ottobockus.com/prosthetics/info-for-new-amputees/information-for-upper-limb-amputees-and-their-families/" title="The forearm's bones are still fully intact" target="_blank"><img src="img/amputation_level_upper_limb_drawing_16_9_teaser_onecolumn-4.jpg"
+                    alt="Diagram of a disarticulated wrist"></a>
+        </section>
+    </main>
+    <footer>
+        <p>Designed by Chris Andrade and Lovepreet Uppal for the Center for Advanced Research and Technology (CART)</p>
+        <img src="img/image00-resize.jpg" alt="CART logo">
+    </footer>
     <script>
-        function navBar() {
-            document.getElementById("nava");
+        function showNavBar() {
+            if (document.getElementsByClassName("nav-drop")[0].style.top == "-500px")
+            {document.getElementsByClassName("nav-drop")[0].style.top = "0px"}
+            else if (document.getElementsByClassName("nav-drop")[0].style.top == "0px")
+            {document.getElementsByClassName("nav-drop")[0].style.top = "-500px"}
         }
     </script>
-
-    <div class="nav-drop">
-            <button id="button" onclick="navBar()"></button>
-                <div id="nava">
-                    <a href="index.html">Home</a>
-                    <a href="target-market.html">Target Market</a>
-                    <a href="description.html">Description</a>
-                    <a href="impact.html">Impact</a>
-                </div>
-    </div>
-
-    <h1>Handicap Apparatus for Normal Disarticulation (H.A.N.D.)</h1>
-    <section>
-        <p>The H.A.N.D. is an artificial hand prosthesis that relies on use of preexisting tendons and muscles to control the fingers of the prosthesis. It addresses one of the most problematic issues of artificial prostheses: Unintuitive movement control. It will most benefit amputees with a fully intact forearm up to the wrist, from which the
-            flexor digitorum profundus and flexor pollicis longus tendons can still be used.</p>
-    </section>
-    <section>
-        <p>Though the target market for this prosthesis seems scarce, a study in 2005 found that more than 10,000 Americans had undergone wrist disarticulation amputaion, the surgery that this prosthesis benefits the most.</p>
-    </section>
 </body>
 
 </html>
