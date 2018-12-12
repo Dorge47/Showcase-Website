@@ -13,23 +13,25 @@ body {
   /**       navbar css     **/
 
 #button {
-    display: flex;
-    align-content: space-around;
-    justify-content: center;
     margin-top: 2%;
-    width: 6%;
-    height: 25px;
-}
-
-#menu-bars {
     width: 20px;
     height: 20px;
+}
+
+#button:hover {
+    cursor: pointer;
 }
 
 .nav-drop {
     position: relative;
     top: -500px;
     transition-duration: .5s;
+}
+
+.nav-dropped {
+    position: relative;
+    top: 0px;
+    transition-duration: .25s;
 }
 
 #nav-a {
