@@ -8,62 +8,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        <!--
-
-        //-->
-    </script>
+    <script type="application/javascript" src="application.js"></script>
     <title>H.A.N.D.</title>
 </head>
 
 <body>
-
-
     <img src="img/menu-bars.png" alt="Menu bars" id="button" onclick="showNavBar()">
+    <div class="navcontainer">
     <nav class="nav-drop" id="navdrop">
-
-        <div id="nav-a">
-            <a class="a" href="index.html">Home</a>
-            <a class="a" href="target-market.html">Target Market</a>
-            <a class="a" href="description.html">Description</a>
-            <a class="a" href="impact.html">Impact</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="target-market.html">Target Market</a>
+        <a href="description.html">Description</a>
+        <a href="impact.html">Impact</a>
     </nav>
+    </div>
     <main>
-        <h1 class="home-h1">Handicap Apparatus for Normal Disarticulation (H.A.N.D.)</h1>
+        <h1>Handicap Apparatus for Normal Disarticulation (H.A.N.D.)</h1><br>
         <section>
             <p class="home-p">The H.A.N.D. is an artificial hand prosthesis that relies on use of preexisting tendons and muscles to control the fingers of the prosthesis. It addresses one of the most problematic issues of artificial prostheses:
-                Unintuitive
-                movement
-                control. It will most benefit amputees with a fully intact forearm up to the wrist, from which the flexor digitorum profundus and flexor pollicis longus tendons can still be used.</p>
+                Unintuitive movement control. It will most benefit amputees with a fully intact forearm up to the wrist, from which the flexor digitorum profundus and flexor pollicis longus tendons can still be used.</p>
             <a href="http://www.assh.org/handcare/Anatomy/Muscles#Wrist%20Forearm" title="Most tendons split long before the wrist" target="_blank"><img src="img/Tendons-FingerExtensor-ExtDigitorum-resize.jpg" alt="Diagram of tendons in the arm"></a>
         </section>
+        <br>
         <section>
             <p class="home-p">The specific amputation required to qualify patients for use of this prosthesis is called wrist disarticulation. It involves the amputation of the hand at the wrist joint, ensuring that the muscles and tendons located
-                within the arm
-                are
-                not damaged.</p>
+                within the arm are not damaged.</p>
             <a href="https://www.ottobockus.com/prosthetics/info-for-new-amputees/information-for-upper-limb-amputees-and-their-families/" title="The forearm's bones are still fully intact" target="_blank"><img src="img/amputation_level_upper_limb_drawing_16_9_teaser_onecolumn-4.jpg"
                     alt="Diagram of a disarticulated wrist"></a>
         </section>
     </main>
     <footer>
-        <p>Designed by Chris Andrade and Lovepreet Uppal for the Center for Advanced Research and Technology (CART)</p>
-        <img src="img/image00-resize.jpg" alt="CART logo">
+        <div id="names">
+            <p>Lovepreet Uppal</p>
+            <p>Chris Andrade</p>
+        </div>
+        <div id="credits">
+          <br><br>
+            <p>Designed for the Center for Advanced Research and Technology (CART)</p>
+        </div>
+        <div class="cartlogo"><img src="img/image00-resize.jpg" alt="CART logo"></div>
     </footer>
-    <script>
-        isNavBarDropped = 0
-
-        function showNavBar() {
-            if (isNavBarDropped) {
-                document.getElementById("navdrop").classList.remove("nav-dropped");
-                isNavBarDropped = 0;
-            } else {
-                document.getElementById("navdrop").classList.add("nav-dropped");
-                isNavBarDropped = 1;
-            }
-        }
-    </script>
 </body>
 
 </html>

@@ -1,28 +1,106 @@
-/*initial commit placeholder*/
-.main {
-    background-color: #dfffff;
-}
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Ubuntu');
 
 body {
-    margin: 0 auto;
-    max-width: 60%;
-
+    background-color: #CCB28A;
 }
-  /**       Home     **/
-
-  /**       navbar css     **/
 
 #button {
     margin-top: 2%;
-    width: 20px;
-    height: 20px;
+    margin-left: 2%;
+    width: 32px;
+    height: 32px;
 }
 
 #button:hover {
     cursor: pointer;
 }
 
+.cartlogo {
+    border-left: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+footer {
+    background-color: #FFDEAD;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+.home-p {
+    font-size: 1.2em;
+}
+
+main {
+    align-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 100%;
+}
+
+main section {
+    width: 47%;
+}
+
+main section.thirdsection {
+    margin-top: 1%;
+    width: 60%;
+}
+
+main div.twosections {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#names {
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 25%;
+}
+
+nav {
+    background-color: #FFBF60;
+    width: 50%;
+    text-align: center;
+    line-height: normal;
+    font-size: 1.2em;
+}
+
+nav a {
+    font-family: 'Merriweather', serif;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
 .nav-drop {
+    padding-bottom: .3%;
+    padding-top: .3%;
     position: relative;
     top: -500px;
     transition-duration: .5s;
@@ -34,30 +112,22 @@ body {
     transition-duration: .25s;
 }
 
-#nav-a {
-    width: 100%;
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    line-height: normal;
-    font-size: 1.2em;
-
-
+section {
+    background-color: #7F6F56;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.a {
-    padding-right: 5%;
-    padding-left: 5%;
-    text-align: center;
-    text-decoration: none;
+section p {
+    color: #FFF;
 }
 
-.home-h1 {
-    text-align: center;
+.vl {
+    border-left: 1px solid black;
 }
 
-.home-p {
-    line-height: 115%;
-    font-size: 1.2em;
-    margin-top: 5%;
+@media only screen and (max-width: 1024px) {
+
 }

@@ -8,21 +8,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        <!--
-
-        //-->
-    </script>
+    <script type="application/javascript" src="application.js"></script>
     <title>Target Market</title>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="target-market.html">Target Market</a>
-        <a href="description.html">Description</a>
-        <a href="impact.html">Impact</a>
+    <img src="img/menu-bars.png" alt="Menu bars" id="button" onclick="showNavBar()">
+    <div class="navcontainer">
+    <nav class="nav-drop" id="navdrop">
+            <a href="index.html">Home</a>
+            <a href="target-market.html">Target Market</a>
+            <a href="description.html">Description</a>
+            <a href="impact.html">Impact</a>
     </nav>
+    </div>
     <main>
         <h1>Target Market</h1>
         <section>
@@ -31,6 +30,7 @@
                 tendons used to control finger movement, the H.A.N.D.'s primary feature.</p>
             <a href="https://www.grit3d.com/prosthetic-hands/wrist-disarticulation/" title="Wrist disarticulation amputee" target="_blank"><img src="img/wrist-disarticulation.jpg" alt="Example of a wrist disarticulation amputee"></a>
         </section>
+        <br>
         <section>
             <h2>Why disarticulation?</h2>
             <p>In order to use the device, the flexor digitorum profundus tendons (control primary four fingers) and flexor pollicis longus tendon (controls thumb) must still be intact. The flexor digitorum profundus splits before the wrist, so
@@ -40,16 +40,25 @@
             <a href="https://thewellnessdigest.com/flexor-digitorum-profundus-anatomy/" title="Flexor digitorum profundus description" target="_blank"><img src="img/flx-dgt-prfs.jpg" alt="Flexor digitorum profundus diagram"></a>
             <a href="https://thewellnessdigest.com/flexor-pollicis-longus-anatomy-origin-insertion-action/" title="Flexor pollicis longus description" target="_blank"><img src="img/Flexor-Pollicis-Longus.jpg" alt="Flexor pollicis longus diagram"></a>
         </section>
-        <section>
+        <br>
+        <section class="thirdsection">
+            <h2>Specific numbers</h2>
             <p>Though the target market for this prosthesis seems scarce, <a href="https://www.ncbi.nlm.nih.gov/books/NBK453290/#_sec_000085_" target="_blank">a study in 2005 found that more than 500,000 Americans had undergone amputation of the
-                    hands
-                    or fingers</a>, and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2743731/" title="Raichle, Katherine A et al. “Prosthesis use in persons with lower- and upper-limb amputation” Journal of rehabilitation research and development vol. 45,7 (2008): 961-72."
+                    hands or fingers</a>, and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2743731/" title="Raichle, Katherine A et al. “Prosthesis use in persons with lower- and upper-limb amputation” Journal of rehabilitation research and development vol. 45,7 (2008): 961-72."
                     target="_blank">about 5.6% of all amputations are wrist disarticulation</a>. Given that <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2743731/#S1title" title="Raichle, Katherine A et al. “Prosthesis use in persons with lower- and upper-limb amputation” Journal of rehabilitation research and development vol. 45,7 (2008): 961-72."
                     target="_blank">only 24-56% of amputees even get a prosthesis to help them</a>, it is evident that there is a need for this product.</p>
         </section>
     </main>
     <footer>
-        <p>Designed by Chris Andrade and Lovepreet Uppal for the Center for Advanced Research and Technology (CART)</p>
+        <div id="names">
+            <p>Lovepreet Uppal</p>
+            <p>Chris Andrade</p>
+        </div>
+        <div class="vl"></div>
+        <div id="credits">
+            <p>Designed for the Center for Advanced Research and Technology (CART)</p>
+        </div>
+        <div class="vl"></div>
         <img src="img/image00-resize.jpg" alt="CART logo">
     </footer>
 </body>
