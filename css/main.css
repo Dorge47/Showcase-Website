@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Ubuntu');
 
+a {
+    color: white;
+}
+
 body {
     background-color: #CCB28A;
+    margin: 0;
+    padding-bottom: 200px;
+    position: relative;
+
 }
 
 #button {
-    margin-top: 2%;
-    margin-left: 2%;
-    width: 32px;
     height: 32px;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 32px;
 }
 
 #button:hover {
@@ -22,36 +30,115 @@ body {
     width: 25%;
 }
 
-footer {
-    background-color: #FFDEAD;
+#credits {
+    align-content: center;
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    margin: 0px;
+    font-size: 1.2em;
+    justify-content: center;
 }
 
-h1 {
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+#credits p {
+    align-self: center;
+}
+
+footer {
+    background-color: #FFDEAD;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    position: absolute;
     width: 100%;
 }
 
-.home-p {
-    font-size: 1.2em;
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.4em;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    align-self: center;
+    color: #FFE8E5;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hands {
+    width: 40%;
+}
+
+.hands:hover {
+    width: 45%;
+}
+
+#home-arm {
+    margin-top: 3%;
+}
+
+#home-body {
+    margin-top: 6%;
+}
+
+.imgflex {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
 }
 
 main {
     align-content: space-around;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
     height: 100%;
+    justify-content: space-around;
+}
+
+main div.twosections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 main section {
-    width: 47%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 0.7%;
+    margin-right: 0.7%;
+    padding-bottom: 2%;
+    width: 45%;
+}
+
+main section a {
+    align-self: center;
+    transition-duration: .5s;
+    width: 60%;
+}
+
+main section a:hover {
+    transition-duration: .5s;
+    width: 75%;
+}
+
+main section a img {
+    width: 100%;
+}
+
+main section p {
+    font-size: 1.5em;
+    max-width: 100%;
+    word-spacing: 3px;
 }
 
 main section.thirdsection {
@@ -59,42 +146,54 @@ main section.thirdsection {
     width: 60%;
 }
 
-main div.twosections {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-}
-
 #names {
+    align-content: center;
     border-right: 1px solid black;
     display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
+    font-size: 1.2em;
+    justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 25%;
+}
+
+#names p {
+    align-self: center;
+    line-height: 150%;
 }
 
 nav {
     background-color: #FFBF60;
-    width: 50%;
-    text-align: center;
-    line-height: normal;
     font-size: 1.2em;
+    line-height: normal;
+    text-align: center;
+    width: 50%;
 }
 
 nav a {
     font-family: 'Merriweather', serif;
-    padding-right: 5%;
     padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
     text-decoration: none;
 }
 
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
 .navcontainer {
     display: flex;
+    justify-content: space-around;
+}
+
+#navdrop {
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
 }
 
@@ -109,15 +208,15 @@ nav a {
 .nav-dropped {
     position: relative;
     top: 0px;
-    transition-duration: .25s;
+    transition-duration: .3s;
 }
 
 section {
     background-color: #7F6F56;
+    padding-bottom: 1%;
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 1%;
-    padding-bottom: 1%;
 }
 
 section p {
@@ -129,5 +228,32 @@ section p {
 }
 
 @media only screen and (max-width: 1024px) {
+    #home-body {
+        margin-top: 8%;
+    }
+
+    main section a {
+        width: 90%;
+    }
+
+    main section a:hover {
+        width: 90%;
+    }
+
+    main section p {
+        font-size: 1.5em;
+        max-width: 100%;
+        padding-left: 2%;
+        word-spacing: 3px;
+    }
+
+    nav {
+        font-size: 1.2em;
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
 
 }
