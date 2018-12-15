@@ -79,14 +79,6 @@ h2 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.hands {
-    width: 40% !important;
-}
-
-.hands:hover {
-    width: 45% !important;
-}
-
 #home-arm {
     margin-top: 3%;
 }
@@ -265,6 +257,14 @@ section p {
     border-left: 1px solid black;
 }
 
+.z-hands {
+    width: 40%;
+}
+
+.z-hands:hover {
+    width: 45%;
+}
+
 @media only screen and (max-width: 1024px) {
     footer {
         font-size: .9em;
@@ -287,13 +287,27 @@ section p {
         align-content: flex-start;
     }
 
-    main section a {
+    main div.fullwidth section.thirdsection div.imgflex a.z-hands { /*IS THIS ENOUGH SELECTORS YET?*/
+        width: 40%;
+    }
+
+    main div.fullwidth section.thirdsection div.imgflex a.z-hands:hover {
+        width: 40%;
+    }
+
+    main section a.imgcontainer {
+        filter: brightness(100%);
         width: 90%;
     }
 
-    main section a:hover {
+    main section a.imgcontainer:hover {
+        filter: brightness(100%);
         width: 90%;
         /*cancels hover expansion on tablets*/
+    }
+
+    main section a.imgcontainer img:hover {
+        box-shadow: none;
     }
 
     main section p {
@@ -357,6 +371,15 @@ section p {
         margin-right: 5%;
     }
 
+    .imgflex {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
     main {
         flex-direction: column;
     }
@@ -365,6 +388,14 @@ section p {
         margin-left: 4.5%;
         margin-right: 4.5%;
         width: 90%;
+    }
+
+    main div.fullwidth section.thirdsection div.imgflex a.z-hands {
+        width: 80%;
+    }
+
+    main div.fullwidth section.thirdsection div.imgflex a.z-hands:hover {
+        width: 80%;
     }
 
     nav a {
