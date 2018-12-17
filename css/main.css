@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Ubuntu');
-
 a {
-    color: white;
+    color: #DEEBFF;
 }
 
 body {
@@ -15,14 +13,15 @@ body {
     display: none;
 }
 
-#button {
+#navbutton {
+    display: none;
     height: 32px;
     margin-left: 2%;
     margin-top: 2%;
     width: 32px;
 }
 
-#button:hover {
+#navbutton:hover {
     cursor: pointer;
 }
 
@@ -49,8 +48,8 @@ footer {
     background-color: #FFDEAD;
     bottom: 0;
     display: flex;
-    justify-content: space-around;
     height: 120px;
+    justify-content: space-around;
     padding-bottom: 1%;
     padding-top: 1%;
     position: absolute;
@@ -60,8 +59,12 @@ footer {
 .fullwidth {
     display: flex;
     justify-content: center;
-    margin-top: 2%;
     width: 100%;
+}
+
+.fullthird {
+    /*Fullthird is used in addition to fullwidth for thirdsection containers, so the actual fullwidth class can be applied to the image source containers as well*/
+    margin-top: 2%;
 }
 
 h1 {
@@ -106,6 +109,15 @@ main {
     min-height: 79vh;
 }
 
+main div.fullwidth section.thirdsection div.imgflex div.z-hands {
+    /*IS THIS ENOUGH SELECTORS YET?*/
+    width: 40%;
+}
+
+main div.fullwidth section.thirdsection div.imgflex div.z-hands:hover {
+    width: 45%;
+}
+
 main section {
     display: flex;
     flex-direction: column;
@@ -116,26 +128,26 @@ main section {
     width: 45%;
 }
 
-main section a.imgcontainer {
+main section div.imgcontainer {
     align-self: center;
     filter: brightness(85%);
     transition-duration: .5s;
     width: 60%;
 }
 
-main section a.imgcontainer:hover {
+main section div.imgcontainer:hover {
     filter: brightness(100%);
     transition-duration: .5s;
     width: 75%;
 }
 
-main section a.imgcontainer img {
+main section div.imgcontainer img {
     height: 100%;
     transition-duration: .5s;
     width: 100%;
 }
 
-main section a.imgcontainer img:hover {
+main section div.imgcontainer img:hover {
     box-shadow: 7px 7px 5px #6a5d48;
     transition-duration: .5s;
 }
@@ -150,10 +162,10 @@ main section p {
     align-content: center;
     border-right: 1px solid black;
     display: flex;
-    font-size: 1.2em;
-    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    font-size: 1.2em;
+    justify-content: center;
     width: 25%;
 }
 
@@ -220,7 +232,7 @@ nav a:visited:hover {
 
 .nav-dropped {
     position: relative;
-    top: 0px;
+    top: 0;
     transition-duration: .3s;
 }
 
@@ -248,21 +260,13 @@ section p {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-left: 0.7%;
-    margin-top: 3%;
     margin-right: 0.7%;
+    margin-top: 3%;
     width: 100%;
 }
 
 .vl {
     border-left: 1px solid black;
-}
-
-.z-hands {
-    width: 40%;
-}
-
-.z-hands:hover {
-    width: 45%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -287,26 +291,23 @@ section p {
         align-content: flex-start;
     }
 
-    main div.fullwidth section.thirdsection div.imgflex a.z-hands { /*IS THIS ENOUGH SELECTORS YET?*/
+    main div.fullwidth section.thirdsection div.imgflex div.z-hands:hover {
         width: 40%;
+        /*cancels hover expansion on tablets*/
     }
 
-    main div.fullwidth section.thirdsection div.imgflex a.z-hands:hover {
-        width: 40%;
-    }
-
-    main section a.imgcontainer {
+    main section div.imgcontainer {
         filter: brightness(100%);
         width: 90%;
     }
 
-    main section a.imgcontainer:hover {
+    main section div.imgcontainer:hover {
         filter: brightness(100%);
         width: 90%;
         /*cancels hover expansion on tablets*/
     }
 
-    main section a.imgcontainer img:hover {
+    main section div.imgcontainer img:hover {
         box-shadow: none;
     }
 
@@ -340,29 +341,29 @@ section p {
 
 @media only screen and (max-width: 640px) {
     #credits {
-      font-size: 1.2em;
-      margin-left: -5%;
-      margin-right: -7%;
-  }
+        font-size: 1.2em;
+        margin-left: -5%;
+        margin-right: -7%;
+    }
 
     footer {
         background-color: #FFDEAD;
         bottom: 0;
         display: flex;
         font-size: 0.765em;
-        justify-content: space-around;
         height: 130px;
+        justify-content: space-around;
         padding-bottom: 1%;
         padding-top: 1%;
         position: absolute;
         width: 100%;
     }
 
-    .fullwidth {
+    .fullthird {
         margin-top: 0;
     }
 
-    .fullwidth section {
+    .fullthird section {
         width: 90%;
     }
 
@@ -390,16 +391,20 @@ section p {
         width: 90%;
     }
 
-    main div.fullwidth section.thirdsection div.imgflex a.z-hands {
+    main div.fullwidth section.thirdsection div.imgflex div.z-hands {
         width: 80%;
     }
 
-    main div.fullwidth section.thirdsection div.imgflex a.z-hands:hover {
+    main div.fullwidth section.thirdsection div.imgflex div.z-hands:hover {
         width: 80%;
     }
 
     nav a {
         font-size: .9em;
+    }
+
+    #navbutton {
+        display: block;
     }
 
     .twosections section {
@@ -414,13 +419,9 @@ section p {
 }
 
 @media only screen and (max-width: 525px) {
-    .br1 {
-        display: block;
-    }
-
     .cartlogo a img {
-        width: 90px;
         height: 117px;
+        width: 90px;
     }
 
     #names {
@@ -433,6 +434,12 @@ section p {
 }
 
 @media only screen and (max-width: 380px) {
+    nav {
+        font-size: 1.6em;
+        margin-bottom: 2%;
+        width: 95%;
+    }
+
     nav a {
         font-size: .6em;
     }

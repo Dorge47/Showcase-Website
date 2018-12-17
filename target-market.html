@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <link rel="stylesheet" href="css/main.css">
@@ -13,9 +14,9 @@
 </head>
 
 <body>
-    <img src="img/menu-bars.png" alt="Menu bars" id="button" onclick="showNavBar()">
+    <img src="img/menu-bars.png" alt="Menu bars" id="navbutton" onclick="showNavBar()">
     <div class="navcontainer">
-        <nav class="nav-drop" id="navdrop">
+        <nav class="nav-drop nav-dropped" id="navdrop">
             <a href="index.html">Home</a>
             <a href="target-market.html">Target Market</a>
             <a href="description.html">Description</a>
@@ -28,9 +29,9 @@
             <section>
                 <h2>A specific kind of amputation</h2>
                 <p>This product will benefit amputees that have undergone disarticulation amputation (the amputation of the hand at the wrist). This specific type of amputation ensures everything below the wrist is preserved, including the muscles
-                    and
-                    tendons used to control finger movement, the H.A.N.D.'s primary feature.</p>
-                <a href="https://www.grit3d.com/prosthetic-hands/wrist-disarticulation/" title="Wrist disarticulation amputee" target="_blank" class="imgcontainer"><img src="img/wrist-disarticulation.jpg" alt="Example of a wrist disarticulation amputee"></a>
+                    and tendons used to control finger movement, the H.A.N.D.'s primary feature.</p>
+                <div class="imgcontainer"><img src="img/wrist-disarticulation.jpg" alt="Example of a wrist disarticulation amputee" title="Wrist disarticulation amputee" class="img1"></div>
+                <div class="fullwidth"><a href="https://www.grit3d.com/prosthetic-hands/wrist-disarticulation/" target="_blank" onmouseover="brightenImage(1)" onmouseout="dimImage(1)">Source</a></div>
             </section>
             <br>
             <section>
@@ -38,12 +39,14 @@
                 <p>In order to use the device, the flexor digitorum profundus tendons (control primary four fingers) and flexor pollicis longus tendon (controls thumb) must still be intact. The flexor digitorum profundus splits before the wrist, so
                     disarticulation would not hinder finger movement. The flexor pollicis longus is typically located almost entirely within the forearm due to the thumb's proximity to the wrist, so amputating the hand does not adversely affect this
                     tendon. There are other tendons that control finger and thumb movement that may not be easily reattached, but the main two should cover the most basic digital movement (movement of the fingers, or digits).</p>
-                <a href="https://thewellnessdigest.com/flexor-digitorum-profundus-anatomy/" title="Flexor digitorum profundus description" target="_blank" class="imgcontainer"><img src="img/flx-dgt-prfs.jpg" alt="Flexor digitorum profundus diagram"></a>
-                <a href="https://thewellnessdigest.com/flexor-pollicis-longus-anatomy-origin-insertion-action/" title="Flexor pollicis longus description" target="_blank" class="imgcontainer"><img src="img/Flexor-Pollicis-Longus.jpg" alt="Flexor pollicis longus diagram"></a>
+                <div class="imgcontainer"><img src="img/flx-dgt-prfs.jpg" alt="Flexor digitorum profundus diagram" title="Flexor digitorum profundus" class="img2"></div>
+                <div class="fullwidth"><a href="https://thewellnessdigest.com/flexor-digitorum-profundus-anatomy/" target="_blank" onmouseover="brightenImage(2)" onmouseout="dimImage(2)">Source</a></div>
+                <div class="imgcontainer"><img src="img/Flexor-Pollicis-Longus.jpg" alt="Flexor pollicis longus diagram" title="Flexor pollicis longus" class="img3"></div>
+                <div class="fullwidth"><a href="https://thewellnessdigest.com/flexor-pollicis-longus-anatomy-origin-insertion-action/" target="_blank" onmouseover="brightenImage(3)" onmouseout="dimImage(3)">Source</a></div>
             </section>
         </div>
         <br>
-        <div class="fullwidth">
+        <div class="fullwidth fullthird">
             <section class="thirdsection">
                 <h2>Specific numbers</h2>
                 <p>Though the target market for this prosthesis seems scarce, <a href="https://www.ncbi.nlm.nih.gov/books/NBK453290/#_sec_000085_" target="_blank">a study in 2005 found that more than 500,000 Americans had undergone amputation of the

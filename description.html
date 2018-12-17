@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <link rel="stylesheet" href="css/main.css">
@@ -13,9 +14,9 @@
 </head>
 
 <body>
-    <img src="img/menu-bars.png" alt="Menu bars" id="button" onclick="showNavBar()">
+    <img src="img/menu-bars.png" alt="Menu bars" id="navbutton" onclick="showNavBar()">
     <div class="navcontainer">
-        <nav class="nav-drop" id="navdrop">
+        <nav class="nav-drop nav-dropped" id="navdrop">
             <a href="index.html">Home</a>
             <a href="target-market.html">Target Market</a>
             <a href="description.html">Description</a>
@@ -29,7 +30,8 @@
             <p>The Handicap Apparatus for Normal Disarticulation (H.A.N.D.) is an artificial hand designed for amputees that have undergone disarticulation amputation. A variety of optional artificial dermal coverings are sold separately to give the
                 appearance of a natural hand for those that desire it. The coverings come in a variety of default skin colors but can be further modified to match the amputee's skin color exactly. Any profit generated from the sale of dermal
                 coverings go directly to research and development costs in an attempt to lower the price of the prosthesis.</p>
-            <a href="http://www.amputee-coalition.org/military-instep/cosmesis.html" title="in-Step article on military cosmesis" target="_blank" class="imgcontainer"><img src="img/cosmesis02.jpg" alt="Potential variations of dermal coverings"></a>
+            <div class="imgcontainer"><img src="img/cosmesis02.jpg" alt="Potential variations of dermal coverings" title="in-Step article on military cosmesis" class="img1"></div>
+            <div class="fullwidth"><a href="http://www.amputee-coalition.org/military-instep/cosmesis.html" target="_blank" onmouseover="brightenImage(1)" onmouseout="dimImage(1)">Source</a></div>
         </section>
         <br>
         <section>
@@ -37,8 +39,8 @@
             <p>The device uses pre-existing tendons and muscles to control the fingers, making movement feel more natural than the gesture control typical of upper limb prostheses. It is made of a lightweight, durable material that will not irritate
                 the skin it is attached to. While this is ideal for comfort, it is also more expensive than alternative materials. The prosthetic fingers attach directly to whatever tendons are available from the amputee's arms, giving varying
                 levels of control to each patient.</p>
-            <a href="http://www.medicalartresources.com/services-directory/finger-toe-2/" title="A custom glove-like prosthesis demonstrates how the H.A.N.D. would look on a wrist" target="_blank" class="imgcontainer"><img src="img/glove-style-prosthetic-hand-palm.jpg"
-                    alt="Example of how the prosthesis would look"></a>
+            <div class="imgcontainer"><img src="img/glove-style-prosthetic-hand-palm.jpg" alt="Example of how the prosthesis would look" title="A custom glove-like prosthesis demonstrates how the H.A.N.D. would look on a wrist" class="img2"></div>
+            <div class="fullwidth"><a href="http://www.medicalartresources.com/services-directory/finger-toe-2/" target="_blank" onmouseover="brightenImage(2)" onmouseout="dimImage(2)">Source</a></div>
         </section>
     </main>
     <footer>
