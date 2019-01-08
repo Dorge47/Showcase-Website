@@ -9,22 +9,6 @@ body {
     position: relative;
 }
 
-.br1 {
-    display: none;
-}
-
-#navbutton {
-    display: none;
-    height: 32px;
-    margin-left: 2%;
-    margin-top: 2%;
-    width: 32px;
-}
-
-#navbutton:hover {
-    cursor: pointer;
-}
-
 .cartlogo {
     border-left: 1px solid black;
     display: flex;
@@ -42,6 +26,10 @@ body {
 #credits p {
     align-self: center;
     width: 80%;
+}
+
+#digitorum {
+    margin-bottom: 3%;
 }
 
 footer {
@@ -83,11 +71,11 @@ h2 {
 }
 
 #home-arm {
-    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 #home-body {
-    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 .imgflex {
@@ -109,13 +97,13 @@ main {
     min-height: 79vh;
 }
 
-main div.fullwidth section.thirdsection div.imgflex div.z-hands {
+main div.fullwidth section.thirdsection div.imgflex div.verticalcontainer div.z-hands {
     /*IS THIS ENOUGH SELECTORS YET?*/
-    width: 40%;
+    width: 80%;
 }
 
-main div.fullwidth section.thirdsection div.imgflex div.z-hands:hover {
-    width: 45%;
+main div.fullwidth section.thirdsection div.imgflex div.verticalcontainer div.z-hands img:hover {
+    width: 112.5%; /*Used to change the width of the div to 90%, so changing the img to (100% * (90/80)) has the same effect*/
 }
 
 main section {
@@ -211,6 +199,18 @@ nav a:visited:hover {
     transition-duration: .5s;
 }
 
+#navbutton {
+    display: none;
+    height: 32px;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 32px;
+}
+
+#navbutton:hover {
+    cursor: pointer;
+}
+
 .navcontainer {
     display: flex;
     justify-content: space-around;
@@ -236,13 +236,24 @@ nav a:visited:hover {
     transition-duration: .3s;
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background-color: rgba(0,0,0,0.5);*/
+    z-index: 2;
+    cursor: pointer;
+}
+
 section {
     background-color: #7F6F56;
     border-radius: 25px;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
+    padding: 1%;
 }
 
 section p {
@@ -263,6 +274,11 @@ section p {
     margin-right: 0.7%;
     margin-top: 3%;
     width: 100%;
+}
+
+.verticalcontainer {
+    display: flex;
+    flex-direction: column;
 }
 
 .vl {
@@ -291,8 +307,8 @@ section p {
         align-content: flex-start;
     }
 
-    main div.fullwidth section.thirdsection div.imgflex div.z-hands:hover {
-        width: 40%;
+    main div.fullwidth section.thirdsection div.imgflex div.verticalcontainer div.z-hands img:hover {
+        width: 100%;
         /*cancels hover expansion on tablets*/
     }
 
@@ -346,6 +362,10 @@ section p {
         margin-right: -7%;
     }
 
+    div.z-hands div {
+        margin-bottom: 10%;
+    }
+
     footer {
         background-color: #FFDEAD;
         bottom: 0;
@@ -391,11 +411,7 @@ section p {
         width: 90%;
     }
 
-    main div.fullwidth section.thirdsection div.imgflex div.z-hands {
-        width: 80%;
-    }
-
-    main div.fullwidth section.thirdsection div.imgflex div.z-hands:hover {
+    main div.fullwidth section.thirdsection div.imgflex div.verticalcontainer div.z-hands {
         width: 80%;
     }
 

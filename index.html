@@ -26,17 +26,27 @@
     <main>
         <h1>Handicap Apparatus for Normal Disarticulation (H.A.N.D.)</h1><br>
         <section>
-            <p>The H.A.N.D. is an artificial hand prosthesis that relies on use of preexisting tendons and muscles to control the fingers of the prosthesis. It addresses one of the most problematic issues of artificial prostheses:
+            <p id="home-arm">The H.A.N.D. is an artificial hand prosthesis that relies on use of preexisting tendons and muscles to control the fingers of the prosthesis. It addresses one of the most problematic issues of artificial prostheses:
                 Unintuitive movement control. It will most benefit amputees with a fully intact forearm up to the wrist, from which the flexor digitorum profundus and flexor pollicis longus tendons can still be used.</p>
-            <div class="imgcontainer"><img src="img/Tendons-FingerExtensor-ExtDigitorum-resize.jpg" alt="Diagram of tendons in the arm" title="Most tendons split long before the wrist" class="img1" id="home-arm"></div>
-            <div class="fullwidth"><!--Using a fullwidth container rather than a class on the anchor tag prevents the anchor's entire y-axis from becoming a link--><a href="http://www.assh.org/handcare/Anatomy/Muscles#Wrist%20Forearm" target="_blank" onmouseover="brightenImage(1)" onmouseout="dimImage(1)">Source</a></div>
+            <div class="imgcontainer">
+                <img src="img/Tendons-FingerExtensor-ExtDigitorum-resize.jpg" alt="Diagram of tendons in the arm" title="Most tendons split long before the wrist" class="img1" onclick="toggleOverlay(1)">
+                <div class="overlay" id="overlay1" onclick="toggleOverlay(1)"><p>The forearm's bones are still fully intact</p></div>
+            </div>
+            <div class="fullwidth"><!--Using a fullwidth container rather than a class on the anchor tag prevents the anchor's entire y-axis from becoming a link-->
+                <a href="http://www.assh.org/handcare/Anatomy/Muscles#Wrist%20Forearm" target="_blank" onmouseover="brightenImage(1)" onmouseout="dimImage(1)">Source</a>
+            </div>
         </section>
         <br>
         <section>
-            <p>The specific amputation required to qualify patients for use of this prosthesis is called wrist disarticulation. It involves the amputation of the hand at the wrist joint, ensuring that the muscles and tendons located
+            <p id="home-body">The specific amputation required to qualify patients for use of this prosthesis is called wrist disarticulation. It involves the amputation of the hand at the wrist joint, ensuring that the muscles and tendons located
                 within the arm are not damaged.</p>
-            <div class="imgcontainer"><img src="img/amputation_level_upper_limb_drawing_16_9_teaser_onecolumn-4.jpg" alt="Diagram of a disarticulated wrist" title="The forearm's bones are still fully intact" class="img2" id="home-body"></div>
-            <div class="fullwidth"><a href="https://www.ottobockus.com/prosthetics/info-for-new-amputees/information-for-upper-limb-amputees-and-their-families/" target="_blank" onmouseover="brightenImage(2)" onmouseout="dimImage(2)">Source</a></div>
+            <div class="imgcontainer">
+                <img src="img/amputation_level_upper_limb_drawing_16_9_teaser_onecolumn-4.jpg" alt="Diagram of a disarticulated wrist" title="The forearm's bones are still fully intact" class="img2" onclick="toggleOverlay(2)">
+                <div class="overlay" id="overlay2" onclick="toggleOverlay(2)"><p>The forearm's bones are still fully intact</p></div>
+            </div>
+            <div class="fullwidth">
+                <a href="https://www.ottobockus.com/prosthetics/info-for-new-amputees/information-for-upper-limb-amputees-and-their-families/" target="_blank" onmouseover="brightenImage(2)" onmouseout="dimImage(2)">Source</a>
+            </div>
         </section>
     </main>
     <footer>
