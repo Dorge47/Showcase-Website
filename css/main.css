@@ -78,6 +78,10 @@ h2 {
     margin-bottom: 6%;
 }
 
+img {
+    cursor: pointer;
+}
+
 .imgflex {
     align-content: center;
     display: flex;
@@ -104,6 +108,10 @@ main div.fullwidth section.thirdsection div.imgflex div.verticalcontainer div.z-
 
 main div.fullwidth section.thirdsection div.imgflex div.verticalcontainer div.z-hands img:hover {
     width: 112.5%; /*Used to change the width of the div to 90%, so changing the img to (100% * (90/80)) has the same effect*/
+}
+
+main div.fullwidth section.thirdsection div.imgflex div.verticalcontainer div.z-hands img.overlayhandimg {
+    width: 112.5%;
 }
 
 main section {
@@ -326,6 +334,10 @@ section p {
         /*cancels hover expansion on tablets*/
     }
 
+    main div.fullwidth section.thirdsection div.imgflex div.verticalcontainer div.z-hands img.overlayhandimg {
+        width: 100%;
+    }
+
     main section div.imgcontainer {
         filter: brightness(100%);
         width: 90%;
@@ -361,6 +373,10 @@ section p {
     nav a:visited {
         color: black;
         transition-duration: .5s;
+    }
+
+    .overlayhandhover {
+        width: 100%;
     }
 
     .twosections {

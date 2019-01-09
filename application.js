@@ -1,4 +1,6 @@
-isNavBarDropped = 1
+//nav bar functions
+
+isNavBarDropped = 1;
 
 function showNavBar() {
     if (isNavBarDropped) {
@@ -9,6 +11,8 @@ function showNavBar() {
         isNavBarDropped = 1;
     }
 }
+
+//image hover functions
 
 function brightenImage(imageNumber) {
     if (window.innerWidth >= 1024/*Disable function on mobile and tablets*/) {
@@ -21,6 +25,8 @@ function dimImage(imageNumber) {
         document.getElementsByClassName(`img${imageNumber}`)[0].parentNode.style.filter = ""
     }
 }
+
+//image overlay functions
 
 function toggleOverlay(overlayNumber) {
     if (document.getElementById(`overlay${overlayNumber}`).overlaystatus == 1) {
@@ -43,6 +49,8 @@ function hideOverlay(overlayNumber) {
     document.getElementById(`overlay${overlayNumber}`).overlaystatus = 0;
 }
 
+//impact.html functions
+
 function hoverOn(whichHand) {
     if (whichHand == 1) {
         handsHovered1 = 1;
@@ -63,22 +71,26 @@ function hoverOff(whichHand) {
 
 function hoverUpdate1() {
     if (handsHovered1 == 1) {
-        document.getElementById("overlay1").classList.remove("overlay");
-        document.getElementById("overlay1").classList.add("overlayhandhover");
+        document.getElementById(`overlay1`).classList.remove("overlay");
+        document.getElementById(`overlay1`).classList.add("overlayhandhover");
+        document.getElementById(`overlay1`).previousSibling.previousSibling.classList.add("overlayhandimg");
     }
     else if (handsHovered1 == 0) {
-        document.getElementById("overlay1").classList.remove("overlayhandhover");
-        document.getElementById("overlay1").classList.add("overlay");
+        document.getElementById(`overlay1`).classList.remove("overlayhandhover");
+        document.getElementById(`overlay1`).classList.add("overlay");
+        document.getElementById(`overlay1`).previousSibling.previousSibling.classList.remove("overlayhandimg");
     }
 }
 
-function hoverUpdate(handHovered) {
-    if (handsHovered1 == 1) {
-        document.getElementById(`overlay${handHovered}`).classList.remove("overlay");
-        document.getElementById(`overlay${handHovered}`).classList.add("overlayhandhover");
+function hoverUpdate2() {
+    if (handsHovered2 == 1) {
+        document.getElementById(`overlay2`).classList.remove("overlay");
+        document.getElementById(`overlay2`).classList.add("overlayhandhover");
+        document.getElementById(`overlay2`).previousSibling.previousSibling.classList.add("overlayhandimg");
     }
-    else if (handsHovered1 == 0) {
-        document.getElementById(`overlay${handHovered}`).classList.remove("overlayhandhover");
-        document.getElementById(`overlay${handHovered}`).classList.add("overlay");
+    else if (handsHovered2 == 0) {
+        document.getElementById(`overlay2`).classList.remove("overlayhandhover");
+        document.getElementById(`overlay2`).classList.add("overlay");
+        document.getElementById(`overlay2`).previousSibling.previousSibling.classList.remove("overlayhandimg");
     }
 }
