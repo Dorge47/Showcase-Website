@@ -42,3 +42,43 @@ function hideOverlay(overlayNumber) {
     document.getElementById(`overlay${overlayNumber}`).previousSibling.previousSibling.style.filter = "brightness(100%)";
     document.getElementById(`overlay${overlayNumber}`).overlaystatus = 0;
 }
+
+function hoverOn(whichHand) {
+    if (whichHand == 1) {
+        handsHovered1 = 1;
+    }
+    else {
+        handsHovered2 = 1;
+    }
+}
+
+function hoverOff(whichHand) {
+    if (whichHand == 1) {
+        handsHovered1 = 0;
+    }
+    else {
+        handsHovered2 = 0;
+    }
+}
+
+function hoverUpdate1() {
+    if (handsHovered1 == 1) {
+        document.getElementById("overlay1").classList.remove("overlay");
+        document.getElementById("overlay1").classList.add("overlayhandhover");
+    }
+    else if (handsHovered1 == 0) {
+        document.getElementById("overlay1").classList.remove("overlayhandhover");
+        document.getElementById("overlay1").classList.add("overlay");
+    }
+}
+
+function hoverUpdate(handHovered) {
+    if (handsHovered1 == 1) {
+        document.getElementById(`overlay${handHovered}`).classList.remove("overlay");
+        document.getElementById(`overlay${handHovered}`).classList.add("overlayhandhover");
+    }
+    else if (handsHovered1 == 0) {
+        document.getElementById(`overlay${handHovered}`).classList.remove("overlayhandhover");
+        document.getElementById(`overlay${handHovered}`).classList.add("overlay");
+    }
+}
