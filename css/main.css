@@ -247,7 +247,7 @@ nav a:visited:hover {
 .overlay {
     display: none;
     position: fixed;
-    width: 100%;
+    width: 95%;
     height: 100%;
     top: 0;
     left: 0;
@@ -256,12 +256,13 @@ nav a:visited:hover {
     /*background-color: rgba(0,0,0,0.5);*/
     z-index: 2;
     cursor: pointer;
+    padding-left: 5%;
 }
 
 .overlayhandhover {
     display: none;
     position: fixed;
-    width: 112.5%;
+    width: 107.5%;
     height: 100%;
     top: 0;
     left: 0;
@@ -270,6 +271,7 @@ nav a:visited:hover {
     /*background-color: rgba(0,0,0,0.5);*/
     z-index: 2;
     cursor: pointer;
+    padding-left: 5%;
 }
 
 section {
