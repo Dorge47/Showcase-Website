@@ -117,7 +117,6 @@ main div.fullwidth section.thirdsection div.imgflex div.verticalcontainer div.z-
 main section {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     margin-left: 0.7%;
     margin-right: 0.7%;
     padding-bottom: 2%;
